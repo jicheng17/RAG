@@ -1,0 +1,10 @@
+python-dotenv
+openai
+langchain
+unstructured
+unstructured[docx]
+unstructured[csv]
+pypdf
+tiktoken
+pinecone-client
+json
