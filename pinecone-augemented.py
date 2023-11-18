@@ -41,8 +41,14 @@ model_name = "gpt-3.5-turbo"
 llm = ChatOpenAI(model_name=model_name)
 chain = load_qa_chain(llm, chain_type="stuff")
 
-query = "What did LVMH do during COVID"
+
+#### RAG flow ####
+query = "What did LVMH do during COVID?"
 similar_docs = get_similiar_docs("LVMH")
+
 result = chain.run(input_documents=similar_docs, question=query)
-print("### result ###")
+print("##############################################")
+print("################# result #####################")
+print("##############################################")
 print(result)
+print("##############################################")
